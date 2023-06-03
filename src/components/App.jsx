@@ -33,7 +33,6 @@ class App extends Component {
   }
 
   addContact = contact => {
-    const { contacts } = this.state;
     const isInContacts = this.state.contacts.some(
       ({ name }) => name.toLowerCase() === contact.name.toLowerCase()
     );
